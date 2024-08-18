@@ -1,0 +1,363 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.active {
+  color: orange;
+  
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 10px 0; /* Padding around the content */
+  position: fixed; /* Fix the navigation bar to the top */
+  top: 0; /* Position at the top */
+  width: 100%; /* Full width */
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+nav ul {
+  list-style: none; /* Remove default list bullet points */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center align the navigation items */
+}
+
+nav li {
+  display: inline-block; /* Arrange items horizontally */
+  margin: 0 10px; /* Spacing between items */
+}
+
+nav a {
+  text-decoration: none; /* Remove default link underline */
+  color: blue; /* Dark gray text color */
+  font-weight: bold; /* Bold text */
+  padding: 8px 16px; /* Padding around the link */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Light gray background on hover */
+  color: orange;
+}
+
+.hero {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1, .hero h2, .hero h3 {
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.hero h3 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+.about {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .left i {
+    width: 500px;
+}
+
+.about .right {
+    width: 50%;
+}
+
+.about .right h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about .right h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about .right p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.about .signature {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about .signature p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.features {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 24%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feature i {
+    width: 50px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.feature h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.products h2, .products h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.products h3 {
+    font-size: 1.8em;
+    color: #007bff;
+}
+
+.product-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.product-tabs .btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.product-tabs .btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-tabs .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 24%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h4 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item .price span {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1em;
+}
+
+.product-item .sale, .product-item .new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .about {
+        flex-direction: inline-block;
+    }
+    .about .right {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    .features {
+      display: flex;
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.btntop {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+}
